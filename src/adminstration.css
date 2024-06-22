@@ -1,0 +1,157 @@
+main {
+    margin-top: 80px;
+}
+h1{
+    text-align: center;
+    color:#0A1535;
+    font-size: 50px;
+    
+}
+.messages1{
+    padding: 80px 0;
+
+}
+.messages1 .row{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.messages1 .content-left{
+    flex-basis:30%;
+  
+}
+.messages1 .content-left img{
+    width:75%;
+    border-radius: 15px;  
+    margin: 18px 0; 
+}
+.messages1 .content-left .name {
+    margin: 16px 35px;
+    font-weight: 600;
+}
+.messages1 .content-left .post{
+    margin: 16px 80px;
+}
+.messages1 .content-right{
+    flex-basis:60%;
+
+}
+.messages1 .content-right p{ 
+    width:100%;  
+    font-weight: 400; 
+    font-size: 20px;  
+    text-align: justify;
+}
+.messages2{
+    padding: 30px 0;
+
+}
+.messages2 .row{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.messages2 .content-left{
+    flex-basis:50%;
+    margin: 16px 60px;
+}
+.messages2 .content-left p{
+    width: 120%;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: justify;
+}
+
+
+.messages2 .content-right{
+    flex-basis: 30%;
+}
+.messages2 .content-right img{
+    width: 75%;
+    border-radius: 15px;
+    margin: 30px 150px;
+}
+.messages2 .content-right .name{
+    font-weight: 600;
+    text-align: center;
+    margin: -10px 75px;   
+}
+.messages2 .content-right .post{
+    margin: 20px 130px;
+}
+
+div.responsive-fix-01{
+    display:none;
+}
+
+@media  screen  and (max-width: 640px) {
+    
+    h1 {
+        font-size: 30px;
+    }
+    
+    .messages1, .messages2 {
+        padding: 40px 0;
+    }
+    
+    .messages1 .row, 
+    .messages2 .row {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .messages1 .content-left, 
+    .messages1 .content-right, 
+    .messages2 .content-left, 
+    .messages2 .content-right {
+        flex-basis: 100%;
+        text-align: center;
+        margin: 0;
+    }
+    
+    .messages1 .content-left img,
+    .messages2 .content-right img {
+        width: 90%;
+        margin: 18px auto;
+    }
+    
+    .messages1 .content-left .name,
+    .messages2 .content-right .name {
+        margin: 16px 0;
+    }
+    
+    .messages1 .content-left .post,
+    .messages2 .content-right .post {
+        margin: 16px 0;
+    }
+    
+    .messages1 .content-right p, 
+    .messages2 .content-left p {
+        width: 90%;
+        margin: 0 auto;
+        
+    }
+}
+
+/* Order specific styles for 640px */
+@media screen and (max-width: 640px) {
+    .messages1 .row, .messages2 .row {
+        flex-direction: column;
+    }
+    
+    
+
+    div.responsive-fix-01{
+        display: block;
+    }
+
+    div.responsive-fix-02{
+        display:none;
+    }
+
+    .messages1 .content-right p,
+    .messages2 .content-left p{ 
+        font-size: 16px;  
+    }
+}
+        
